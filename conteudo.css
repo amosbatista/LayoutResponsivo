@@ -1,0 +1,150 @@
+main, aside{
+	padding: 0px;
+	padding-left: 35px;
+	width: 90%;
+	margin: 1px auto;
+	overflow: auto;
+}
+figure{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+session{
+	padding: 0px;
+	margin:0;
+	position: relative;
+}
+main session{
+	background-color: #222222;
+	text-transform: uppercase;	
+	width: 23%;
+}
+
+aside session{
+	overflow: auto;
+	margin: 8px;
+	margin-left: 0px;
+}
+
+
+aside figure{
+	background-color: #222222;
+}
+
+figure img{
+	width: 100%;
+	z-index: -1;
+}
+main ul{
+	position: absolute;
+	bottom: 10px;
+	text-align: right;
+	width: 400px;
+}
+
+
+ul.listaInternaImagem{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	text-align: left;
+	width: 65%;
+}
+ul.listaExternaRodape{
+	position: relative;
+	width: 80%;
+}
+
+session a{
+	text-decoration: none;
+}
+
+session a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+session li{
+	color: black;
+}
+
+figure li{
+	color: white;
+}
+
+
+session.NoticiaPrincipal{
+	width: 48%;
+}
+
+aside ul{
+	position: absolute;
+	left: 3px;
+	bottom: 3px;
+	text-align: left;
+	width: 75%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+ul.listaExterna{
+	text-align: left;
+	position: relative;
+	text-transform: uppercase;
+	margin:0;
+	padding:0;
+}
+li.CategoriaNoticia{
+	list-style: inside url('images/icone_lista.png');
+}
+aside li.CategoriaNoticia{
+	font-weight: bold;
+}
+li.DescricaoNoticia{
+	font-weight: bold;
+}
+li.NoticiaVermelha{
+	font-weight: bold;
+	color: #ed1c24;
+}
+aside.NoticiaVermelha{
+	margin:0;
+}
+session.NoticiaVermelha_ElementoDefault{
+	display: block;
+}
+session.NoticiaVermelha_OutrosElementos{
+	display: none;
+}
+aside.sessaoExterna{
+	width: 25%;
+	padding: 35px;
+}
+
+
+/* Determinar flutuação dos elementos, de acordo com o tamanho da tela */
+@media only screen and (min-width: 800px) {
+	session{
+		float: left;
+	}
+	aside.sessaoExterna{
+		float: left;
+	}
+	main ul{
+		right: 10px;
+		width: 65%;
+	}
+	li.CategoriaNoticia{
+		font-size: 1vw;
+	}
+	li.DescricaoNoticia{
+		font-size: 1.5vw;
+	}
+	session.NoticiaVermelha_OutrosElementos{
+		display: block;
+	}
+	aside session{
+		width: 23%;
+	}
+}

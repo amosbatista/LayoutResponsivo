@@ -1,0 +1,166 @@
+#adArea{
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	border:1px solid;
+}
+#adArea img{
+	width: 100%;
+}
+
+.logotipo{
+	clear: right;
+	padding-left: 20px;
+}
+
+#menuPrincipal{
+	background: #ed1c24;
+	padding: 10px 0;
+}
+#menuMaisAcessados{
+	background: #242424;	
+}
+#subMenu_Carros{
+	display: none;
+	position: absolute;
+	background-color: #242424;
+	z-index: 1;
+	width: 90%;
+}
+#subMenu_Carros ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+#subMenu_Carros li{
+	font-weight: normal;	
+	padding: 10px;
+	color: white;
+}
+#subMenu_Carros div{
+	display: inline-block;
+	font-weight: normal;	
+	color: white;
+	background-color: #474747;
+	position: absolute;
+	top: 10px;
+	left: 10px;	
+}
+#subMenu_Testes{
+	display: none;
+	position: absolute;
+	background-color: #242424;
+	z-index: 1;
+	width: 90%;
+	
+}
+div.subMenu_Teste_Menu{
+	list-style-type: none;
+	margin: 0;
+	width: 20%;
+}
+#subMenu_Testes ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	display: block;
+	background-color: #474747;
+}
+#subMenu_Testes li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: none;
+	font-weight: normal;	
+	font-weight: bold;	
+}
+#subMenu_Testes li:hover{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #242424;
+}
+.Menu{
+	width: 90%;
+	display: block;
+	overflow: auto;
+	margin: auto;
+}
+
+.Menu > ul{
+	list-style-type: none;
+	margin: 0;
+	display: inline-block;
+}
+
+.Menu li{
+	font-weight: bold;	
+	padding: 10px;
+	color: white;
+}
+
+
+.Menu li.subItemMenu{
+	font-weight: normal;
+}
+.Menu div.cabecalhoMaisAcess{
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-right: 90px;
+	margin-right: 20px;
+	background-image: url("images/bg_maisAcessados.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	font-weight: bold;	
+	padding: 10px;
+	color: white;
+	width: 10%;
+}
+
+
+.Menu a{
+	text-decoration: none;
+}
+
+.Menu a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+div.subMenu_Teste_Item{
+	width: 13%;
+	text-align: left;
+	color: white;
+	font-weight: bold;	
+	padding: 1%;
+}
+div.subMenu_Teste_Item_detalhe{
+	color: #ed1c24;
+	font-weight: normal;	
+}
+div.subMenu_Teste_Item img{
+	width: 100%;
+}
+
+/* Determinar flutuação dos elementos, de acordo com o tamanho da tela */
+@media only screen and (min-width: 800px) {
+	.Menu li{
+		float: left;
+	}
+	#subMenu_Testes div{
+		float: left;
+	}
+	#subMenu_Carros li{
+		float: right;
+	}
+	.Menu div.cabecalhoMaisAcess{
+		float: left;
+	}
+	div.subMenu_Teste_Item{
+		float:left;
+	}
+	.Menu > ul{
+		margin-left: 55px;
+	}
+}

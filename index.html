@@ -1,0 +1,316 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta charset="ISO_8859-9:1989">
+		<link href='https://fonts.googleapis.com/css?family=Dosis:300,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link rel="stylesheet" type="text/css" href="menu.css" />
+		<link rel="stylesheet" type="text/css" href="conteudo.css" />
+		<script src="exibicaoMenu.js"></script>
+		
+	</head>
+
+	<body onClick="ControleMenu.DesabilitarSubMenus();">
+		<!-- Propaganda -->
+		<aside id="adArea">
+			<!--<p>teste</p>-->
+			<a href="#"><img src="images/banner_Merchan.png" /></a>
+		</aside>
+		
+		<!-- Menu principal -->
+		<nav class="Menu" id="menuPrincipal">
+			<ul>
+				<li class="logotipo"><a href="#"><img src="images/logo.png" /></a></li>
+				<li onMouseOver="ControleMenu.HabilitarSubMenuCarro();"><a href="#">Carros</a></li>
+				<li onMouseOver="ControleMenu.HabilitarSubMenuTeste();"><a href="#">Testes</li></a></li>
+				<li><a href="#">Notícias</li></a></li>
+				<li><a href="#">Auto-Serviço</li></a></li>
+				<li class="subItemMenu"><a href="#">Guia de Compras</a></li>
+				<li><a href="#">Tabela FIPE</a></li>
+				<li><a href="#">Assine</a></li>
+				<li>
+					<input id="campoPesquisa" type="text"/>
+				</li>
+			</ul>
+			<!-- Submenus -->
+			<div id="subMenu_Carros">
+				<div>
+					<a href="#">Ver todos os carros</a>
+				</div>
+				<ul>
+					<li><a href="#">Chevrolet Onix</a></li>
+					<li><a href="#">Chevrolet Cobalt</a></li>
+					<li><a href="#">Citröen C3</a></li>
+					<li><a href="#">Fiat Palio</a></li>
+					<li><a href="#">Fiat Toro</a></li>
+					<li><a href="#">Ford EcoSport</a></li>
+					<li><a href="#">Ford New Fiesta</a></li>
+					<li><a href="#">Honda Civic</a></li>
+					<li><a href="#">Honda Fit</a></li>
+					<li><a href="#">Hyundai HB20</a></li>
+					<li><a href="#">Hyundai ix35</a></li>
+					<li><a href="#">Jeep Renegade</a></li>
+					<li><a href="#">Nissan March</a></li>
+					<li><a href="#">Peugeot 208</a></li>
+					<li><a href="#">Renault Duster Oroch</a></li>
+					<li><a href="#">Renault Sandero</a></li>
+					<li><a href="#">Toyota Corolla</a></li>
+					<li><a href="#">Toyota Hilux</a></li>
+					<li><a href="#">Volkswagen Gol</a></li>
+					<li><a href="#">Volkswagen Jetta</a></li>
+				</ul>
+			</div>
+			
+			<div id="subMenu_Testes">
+				<div class="subMenu_Teste_Menu">
+					<ul>
+						<li><a href="#">Ver tudo de testes</a></li>
+						<li><a href="#">Comparativo</a></li>
+						<li><a href="#">Impressões</a></li>
+						<li><a href="#">Longa Duração</a></li>
+						<li><a href="#">Teste de Pista</a></li>
+					</ul>
+				</div>
+				
+				<div class="subMenu_Teste_Item">
+					<a href="#">
+						<img src="images/testes_subItem_focusFastback.jpg" >
+						<div>Ford Focus Fastback Titaniun Plus</div>
+					</a>
+				</div>
+				<div class="subMenu_Teste_Item">
+					<a href="#">
+						<img src="images/testes_subItem_audi.jpg" >
+						<div>Audi A6 2.0 TFSI</div>
+					</a>
+				</div>
+				<div class="subMenu_Teste_Item">
+					<a href="#">
+						<div>Ford EcoSport 1.6 Powershift
+							<div class="subMenu_Teste_Item_detalhe">EcoSport ganha motor 1.6 atrelado à transmissão automatizada de 6...</div>
+						</div>
+						
+					</a>
+				</div>
+				<div class="subMenu_Teste_Item">
+					<a href="#">
+						<img src="images/testes_subItem_audi_q3.jpg" >
+						<div>Audi Q3 1.4</div>
+					</a>
+				</div>
+				<div class="subMenu_Teste_Item">
+					<a href="#">
+						<img src="images/testes_subItem_bmw.jpg" >
+						<div>BMW 420i Cabriolet</div>
+					</a>
+				</div>
+				
+			</div>
+			
+		</nav>
+		<!-- Menu: mais acessados -->
+		<nav class="Menu" id="menuMaisAcessados">
+			<div class="cabecalhoMaisAcess">+ Acessados</div>
+			<ul>
+				<li><a href="#">Salão do Automóvel</a></li>
+				<li><a href="#">Renegade</a></li>
+				<li><a href="#">Novo Sandeiro</a></li>
+				<li><a href="#">Novo Fox</a></li>
+				<li><a href="#">Novo KA</a></li>
+				<li><a href="#">HB20</a></li>
+				<li><a href="#">Duster</a></li>
+				<li><a href="#">Golf</a></li>
+				<li><a href="#">Corolla</a></li>
+				<li><a href="#">Civic</a></li>
+				<li><a href="#">IA-IZ</a></li>
+			</ul>
+			
+		</nav>
+		
+		<!-- Conteúdo principal da página -->
+		<main>
+		
+			<session class="NoticiaPrincipal">
+				<figure>
+				<a href="#">
+					<img src="images/BMW_Serie3.jpg" />
+					<ul>
+						<li class="CategoriaNoticia">Carros Grandes</li>
+						<li class="DescricaoNoticia">BMW Confirma Novos X1 e Série 3 No Brasil</li>
+					</ul>
+				</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+				<a href="#">
+					<img src="images/kiaSportage.jpg">
+					<ul>
+						<li class="CategoriaNoticia">Fabricantes</li>
+						<li class="DescricaoNoticia">Frankfurt: Kia revela novo Sportage</li>
+					</ul>
+				</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+				<a href="#">
+					<img src="images/propagandaConteudo.jpg">
+				</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+				<a href="#">
+					<img src="images/porsche-mission.jpg">
+					<ul>
+						<li class="CategoriaNoticia">Fabricantes</li>
+						<li class="DescricaoNoticia">Frankfurt:Porsche Mission e dá um show</li>
+					</ul>
+				</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+					<a href="#">
+						<img src="images/volkswagen-tiguan.jpg">
+						<ul>
+							<li class="CategoriaNoticia">Promovido por: Volkswagen</li>
+							<li class="DescricaoNoticia">Nova Geração do Volkswagen Tiguan</li>
+						</ul>
+					</a>
+				</figure>
+			</session>
+		</main>
+		
+		<!-- Conteúdo do rodapé -->
+		<aside>
+			<session>
+				<figure>
+					<a href="#">
+						<img src="images/672-sedasluxo-01.jpeg">
+						<ul>
+							<li class="CategoriaNoticia">Comparativos</li>
+						</ul>
+					</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+					<a href="#">
+						<img src="images/665-gtr-01.jpeg">
+						<ul>
+							<li class="CategoriaNoticia">Impressões</li>
+						</ul>
+					</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+					<a href="#">
+						<img src="images/BMW_Serie2.jpg">
+						<ul>
+							<li class="CategoriaNoticia">Impressões</li>
+						</ul>
+					</a>
+				</figure>
+			</session>
+			
+			<session>
+				<figure>
+					<a href="#">
+						<img src="images/chevrolet-malibu-1.jpeg">
+						<ul>
+							<li class="CategoriaNoticia">Auto-Serviço</li>
+						</ul>
+					</a>
+				</figure>
+			</session>
+		
+		</aside>
+		
+		<!-- Texto rodapé -->
+		<aside>
+			<session>
+				<a href="#">
+					<ul class="listaExterna">
+						<li class="DescricaoNoticia">Audi s3 x Mercedes-Benz cla 45-amg</li>
+						<li class="CategoriaNoticia">Pista livre para o embate entre os dois cometas de cauda curta</li>
+					</ul>
+				</a>
+			</session>
+			
+			<session>
+				<a href="#">
+					<ul class="listaExterna">
+						<li class="DescricaoNoticia">Nissan GT-R</li>
+						<li class="CategoriaNoticia">Pilotamos o Godzilla, o monstro recordista de Nürburgring que assombra os alemães</li>
+					</ul>
+				</a>
+			</session>
+			
+			<session>
+				<a href="#">
+					<ul class="listaExterna">
+						<li class="DescricaoNoticia">BMW Série Active Tourer</li>
+						<li class="CategoriaNoticia">Pista livre para o embate entre os dois cometas de cauda curta</li>
+					</ul>
+				</a>
+			</session>
+			
+			<session>
+				<a href="#">
+					<ul class="listaExterna">
+						<li class="DescricaoNoticia">Crevolet mostra nova geração do Malibu</li>
+						<li class="CategoriaNoticia">Sedã perdeu 136Kg e ampliou o espaço entre-eixos</li>
+					</ul>
+				</a>
+			</session>
+		</aside>
+		
+		
+		
+		<aside class="NoticiaVermelha">
+			<session class="NoticiaVermelha_ElementoDefault">
+				<a href="#">
+					<ul class="listaExternaRodape">
+						<li class="NoticiaVermelha">+ Troller T4 X Jeep Renegade</li>
+					</ul>
+				</a>
+			</session>
+			<session class="NoticiaVermelha_OutrosElementos">
+				<a href="#">
+					<ul class="listaExternaRodape">
+						<li class="NoticiaVermelha">+ Troller T4 X Jeep Renegade</li>
+					</ul>
+				</a>
+			</session>
+
+
+			<session class="NoticiaVermelha_OutrosElementos">
+				<a href="#">
+					<ul class="listaExternaRodape">
+						<li class="NoticiaVermelha">+ Troller T4 X Jeep Renegade</li>
+					</ul>
+				</a>
+			</session>
+
+			<session class="NoticiaVermelha_OutrosElementos">
+				<a href="#">
+					<ul class="listaExternaRodape">
+						<li class="NoticiaVermelha">+ Troller T4 X Jeep Renegade</li>
+					</ul>
+				</a>
+			</session>
+			
+		</aside>
+	</body>
+</html>

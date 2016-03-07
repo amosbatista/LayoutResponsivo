@@ -1,0 +1,15 @@
+
+body{
+	/*Predefinção de margem, para evitar problemas em outros browsers*/
+	margin: 0;
+	padding: 0;
+	
+	/*Predefinções em geral*/
+	font-family: 'Dosis', sans-serif;
+	font-size: 100%;
+}
+
+li{
+	list-style-type: none;
+}
+
